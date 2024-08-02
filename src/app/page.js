@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Home from "./component/Home";
+import Home from "../component/Home";
 
 
 const ChatInterface = () => {
