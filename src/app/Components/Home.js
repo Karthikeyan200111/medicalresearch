@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 
 
 const Home = () => {
   return (
+    <Suspense fallback={<>Loading...</>}>
     <div className='text-white flex flex-col sm:gap-28 gap-20'>
       <div className='bg-slate-800 text-white p-5 rounded-lg text-justify'>
         <h1 className='font-bold sm:text-2xl'>Welcome to the Medical Research Assistant! Chatbot</h1>
@@ -65,6 +66,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </Suspense>
   );
 };
 
